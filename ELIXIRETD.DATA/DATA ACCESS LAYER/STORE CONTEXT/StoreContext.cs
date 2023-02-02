@@ -1,15 +1,12 @@
 ﻿using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.IMPORT_MODEL;
+using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.INVENTORY_MODEL;
+using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.ORDERING_MODEL;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.USER_MODEL;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.WAREHOUSE_MODEL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.STORE_CONTEXT
 {
@@ -37,10 +34,18 @@ namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.STORE_CONTEXT
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<PoSummary> PoSummaries { get; set; }
         public virtual DbSet<Warehouse_Receiving> WarehouseReceived { get; set; }
-        public virtual DbSet<Warehouse_Reject> WarehouseReject { get; set; }
 
+        public virtual DbSet<Ordering> Orders { get; set; }
+        public virtual DbSet<GenerateOrderNo> GenerateOrders { get; set; }
+        public virtual DbSet<MoveOrder> MoveOrders { get; set; }
+        public virtual DbSet<TransactMoveOrder> TransactOrder { get; set; }
+        public virtual DbSet<SubCategory> SubCategories { get; set; }
+        public virtual DbSet<MiscellaneousIssue> MiscellaneousIssues { get; set; }
+        public virtual DbSet<MiscellaneousIssueDetails> MiscellaneousIssueDetail { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public virtual DbSet<MiscellaneousReceipt> MiscellaneousReceipts { get; set; }
+
+       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -50,6 +55,8 @@ namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.STORE_CONTEXT
             var connectionString = configuration.GetConnectionString("DevConnection");
             optionsBuilder.UseSqlServer(connectionString);
         }
+
+
 
     }
 }

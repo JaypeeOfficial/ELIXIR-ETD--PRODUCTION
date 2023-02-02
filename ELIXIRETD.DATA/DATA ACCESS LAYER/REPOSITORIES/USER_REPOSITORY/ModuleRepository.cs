@@ -180,8 +180,7 @@ namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.REPOSITORIES
                                              MainMenu = x.ModuleName,
                                              DateAdded = x.DateAdded.ToString("MM/dd/yyyy"),
                                              AddedBy = x.AddedBy,
-                                             MenuPath = x.MenuPath,
-                                             IsActive = x.IsActive
+                                             MenuPath = x.MenuPath
                                          });
 
             return await module.ToListAsync();
@@ -197,8 +196,7 @@ namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.REPOSITORIES
                                            MainMenu = x.ModuleName,
                                            DateAdded = x.DateAdded.ToString("MM/dd/yyyy"),
                                            AddedBy = x.AddedBy,
-                                           MenuPath = x.MenuPath,
-                                           IsActive = x.IsActive
+                                           MenuPath = x.MenuPath
                                        });
 
             return await module.ToListAsync();
@@ -257,8 +255,7 @@ namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.REPOSITORIES
                                            MainMenu = x.ModuleName,
                                            DateAdded = x.DateAdded.ToString("MM/dd/yyyy"),
                                            AddedBy = x.AddedBy,
-                                           MenuPath = x.MenuPath,
-                                           IsActive = x.IsActive 
+                                           MenuPath = x.MenuPath
                                        });
 
             return await PagedList<ModuleDto>.CreateAsync(module, userParams.PageNumber, userParams.PageSize);
@@ -273,12 +270,25 @@ namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.REPOSITORIES
                                            MainMenu = x.ModuleName,
                                            DateAdded = x.DateAdded.ToString("MM/dd/yyyy"),
                                            AddedBy = x.AddedBy,
-                                           MenuPath = x.MenuPath,
-                                           IsActive = x.IsActive 
+                                           MenuPath = x.MenuPath
                                        }).Where(x => x.MainMenu.ToLower()
                                         .Contains(search.Trim().ToLower()));
 
             return await PagedList<ModuleDto>.CreateAsync(module, userParams.PageNumber, userParams.PageSize);
         }
+
+        public async Task<bool> ValidateMenu(int module)
+        {
+            var valid = await _context.RoleModules.Where(x => x.ModuleId == module)
+                                                   .Where(x => x.IsActive == true)
+                                                   .FirstOrDefaultAsync();
+            if(valid == null)
+                return false;
+            return true;
+            
+        }
+
+
+
     }
 }

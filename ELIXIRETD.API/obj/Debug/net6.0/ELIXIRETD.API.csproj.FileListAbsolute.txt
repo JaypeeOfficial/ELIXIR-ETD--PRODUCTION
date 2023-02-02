@@ -134,3 +134,148 @@ C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.API\obj\Debug\net
 C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.csproj.CopyComplete
 C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.genruntimeconfig.cache
 C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.API\obj\Debug\net6.0\ref\ELIXIRETD.API.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\appsettings.Development.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\appsettings.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.exe
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.deps.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.runtimeconfig.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.pdb
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\FluentValidation.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Humanizer.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.DATA.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.DATA.pdb
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.csproj.AssemblyReference.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.AssemblyInfoInputs.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.AssemblyInfo.cs
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.csproj.CoreCompileInputs.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.ELIXIRETD.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.build.ELIXIRETD.API.props
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ELIXIRETD.API.props
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ELIXIRETD.API.props
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\scopedcss\bundle\ELIXIRETD.API.styles.css
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.csproj.CopyComplete
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\refint\ELIXIRETD.API.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.pdb
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.genruntimeconfig.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ref\ELIXIRETD.API.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\appsettings.Development.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\appsettings.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.exe
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.deps.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.runtimeconfig.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.API.pdb
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\FluentValidation.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Humanizer.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.DATA.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\bin\Debug\net6.0\ELIXIRETD.DATA.pdb
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.csproj.AssemblyReference.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.AssemblyInfoInputs.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.AssemblyInfo.cs
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.csproj.CoreCompileInputs.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.ELIXIRETD.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.build.ELIXIRETD.API.props
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ELIXIRETD.API.props
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ELIXIRETD.API.props
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\scopedcss\bundle\ELIXIRETD.API.styles.css
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.csproj.CopyComplete
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\refint\ELIXIRETD.API.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.pdb
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ELIXIRETD.API.genruntimeconfig.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.API\obj\Debug\net6.0\ref\ELIXIRETD.API.dll

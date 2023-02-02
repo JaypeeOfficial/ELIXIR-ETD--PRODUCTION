@@ -26,3 +26,31 @@ C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.DATA\bin\Debug\ne
 C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.pdb
 C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.genruntimeconfig.cache
 C:\Users\jobidos\Desktop\MY ELIXIR ETD\ELIXIRETD.API\ELIXIRETD.DATA\obj\Debug\net6.0\ref\ELIXIRETD.DATA.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.deps.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.runtimeconfig.json
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.pdb
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.csproj.AssemblyReference.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.AssemblyInfoInputs.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.AssemblyInfo.cs
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.csproj.CoreCompileInputs.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\refint\ELIXIRETD.DATA.dll
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.pdb
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.genruntimeconfig.cache
+D:\Phil Files\Dotnet Program\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ref\ELIXIRETD.DATA.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.deps.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.runtimeconfig.json
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\bin\Debug\net6.0\ELIXIRETD.DATA.pdb
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.csproj.AssemblyReference.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.AssemblyInfoInputs.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.AssemblyInfo.cs
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.csproj.CoreCompileInputs.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\refint\ELIXIRETD.DATA.dll
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.pdb
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ELIXIRETD.DATA.genruntimeconfig.cache
+D:\Phil Files\philfiles\ELIXIR-ETD-main\ELIXIRETD.DATA\obj\Debug\net6.0\ref\ELIXIRETD.DATA.dll

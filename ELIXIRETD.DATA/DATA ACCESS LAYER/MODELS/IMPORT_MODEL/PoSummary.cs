@@ -52,9 +52,6 @@ namespace ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.IMPORT_MODEL
         public DateTime ImportDate { get; set; } = DateTime.Now;
 
         public DateTime? DateCancelled { get; set; }
-        public string CancelBy { get; set; }
-        public bool? IsCancelled { get; set; }
-
 
 
 
