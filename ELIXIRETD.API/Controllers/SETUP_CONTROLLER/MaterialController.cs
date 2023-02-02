@@ -44,18 +44,24 @@ namespace ELIXIRETD.API.Controllers.SETUP_CONTROLLER
         [Route("AddNewMaterial")]
         public async Task<IActionResult> AddNewMaterial(Material material)
         {
-
-                var itemCategoryId = await _unitOfWork.Materials.ValidateItemCategoryId(material.ItemCategoryId);
+   
                 var uomId = await _unitOfWork.Materials.ValidateUOMId(material.UomId);
+                var validDescriptionAndUom = await _unitOfWork.Materials.ValidateDescritionAndUom(material);
+            var validateItemcodeandSubCateg = await _unitOfWork.Materials.ExistingItemAndSubCateg(material);
 
-                if (itemCategoryId == false)
-                    return BadRequest("Item Category doesn't exist, Please add data first!");
+            if (validateItemcodeandSubCateg == true)
+                return BadRequest("Item code And Sub category already existing! Please try again!");
+
+            if (validDescriptionAndUom == true)
+                return BadRequest("Item Description and Uom already exist");
 
                 if (uomId == false)
                     return BadRequest("UOM doesn't exist, Please add data first!");
 
                 if (await _unitOfWork.Materials.ItemCodeExist(material.ItemCode))
                     return BadRequest("Item Code already Exist!, Please try something else!");
+
+
 
                 await _unitOfWork.Materials.AddMaterial(material);
                 await _unitOfWork.CompleteAsync();
@@ -68,11 +74,19 @@ namespace ELIXIRETD.API.Controllers.SETUP_CONTROLLER
         [Route("UpdateMaterials")]
         public async Task<IActionResult> UpdateRawMaterials( [FromBody] Material material)
         {
-            var itemCategoryId = await _unitOfWork.Materials.ValidateItemCategoryId(material.ItemCategoryId);
+          
             var uomId = await _unitOfWork.Materials.ValidateUOMId(material.UomId);
 
-            if (itemCategoryId == false)
-                return BadRequest("Item Category doesn't exist, Please add data first!");
+            var validDescriptionAndUom = await _unitOfWork.Materials.ValidateDescritionAndUom(material);
+            var validateItemcodeandSubCateg = await _unitOfWork.Materials.ExistingItemAndSubCateg(material);
+
+            if (validateItemcodeandSubCateg == true)
+                return BadRequest("Item code And Sub category already existing! Please try again!");
+
+            if (validDescriptionAndUom == false)
+                return BadRequest("Item Description and Uom already exist");
+
+         
 
             if (uomId == false)
                 return BadRequest("UOM doesn't exist, Please add data first!");
@@ -99,6 +113,7 @@ namespace ELIXIRETD.API.Controllers.SETUP_CONTROLLER
         [Route("ActivateMaterial")]
         public async Task<IActionResult> ActivateRawMaterial([FromBody] Material rawmaterial)
         {
+
 
             await _unitOfWork.Materials.ActivateMaterial(rawmaterial);
             await _unitOfWork.CompleteAsync();
@@ -183,8 +198,9 @@ namespace ELIXIRETD.API.Controllers.SETUP_CONTROLLER
         [Route("AddNewItemCategories")]
         public async Task<IActionResult> CreateNewIteCategories(ItemCategory category)
         {
+          
                 if (await _unitOfWork.Materials.ItemCategoryExist(category.ItemCategoryName))
-                    return BadRequest("Item Category already Exist!, Please try something else!");
+                    return BadRequest("Item category already exist!, Please try something else!");
 
                 await _unitOfWork.Materials.AddNewItemCategory(category);
                 await _unitOfWork.CompleteAsync();
@@ -197,9 +213,13 @@ namespace ELIXIRETD.API.Controllers.SETUP_CONTROLLER
         [Route("UpdateItemCategories")]
         public async Task<IActionResult> UpdateItemCategories([FromBody] ItemCategory category)
         {
-        
+         
+            var valid = await _unitOfWork.Materials.UpdateItemCategory(category);
+            if (valid == false)
+                return BadRequest("No Existing Item Category");
+          
             if (await _unitOfWork.Materials.ItemCategoryExist(category.ItemCategoryName))
-                return BadRequest("Item Category already Exist!, Please try something else!");
+                return BadRequest("Item category already exist!, Please try something else!");
 
             await _unitOfWork.Materials.UpdateItemCategory(category);
             await _unitOfWork.CompleteAsync();
@@ -212,6 +232,10 @@ namespace ELIXIRETD.API.Controllers.SETUP_CONTROLLER
         [Route("InActiveItemCategory")]
         public async Task<IActionResult> InActiveItemCategory([FromBody] ItemCategory category)
         {
+            var validateifUse = await _unitOfWork.Materials.ValidateSubcategAndcategor(category.Id);
+
+            if (validateifUse == true)
+                return BadRequest("Item category was in use!");
 
             await _unitOfWork.Materials.InActiveItemCategory(category);
             await _unitOfWork.CompleteAsync();
@@ -280,6 +304,155 @@ namespace ELIXIRETD.API.Controllers.SETUP_CONTROLLER
 
             return Ok(categoryResult);
         }
+
+        // ============================================== Sub Category =================================================================
+
+        [HttpGet]
+        [Route("GetAllActiveSubCategory")]
+        public async Task<IActionResult> GetallActiveSubCategory ()
+        {
+            var category = await _unitOfWork.Materials.GetAllActiveSubCategory();
+
+            return Ok(category);
+        }
+
+        [HttpGet]
+        [Route("GetAllInActiveSubCategory")]
+        public async Task<IActionResult> GetAllInActiveSubCategory()
+        {
+            var category = await _unitOfWork.Materials.GetInActiveSubCategory();
+
+            return Ok(category);
+        }
+
+        [HttpPost]
+        [Route("AddNewSubCategory")]
+        public async Task<IActionResult> AddnewSubCategory(SubCategory category)
+        {
+            var validateItemCateg = await _unitOfWork.Materials.ValidateItemCategory(category.ItemCategId);
+            var existingSubCategandItemCateg = await _unitOfWork.Materials.ExistSubCategoryAndItemCateg(category);
+
+            if (existingSubCategandItemCateg == true)
+                return BadRequest("Sub category and Item category already existing! Please try another input");
+
+            if (validateItemCateg == false)
+                return BadRequest("No Item Category Existing! Please try Another input!");
+
+            await _unitOfWork.Materials.AddNewSubCategory(category);
+            await _unitOfWork.CompleteAsync();
+            return Ok(category);
+        }
+
+        [HttpPut]
+        [Route("UpdateSubCategory")]
+        public async Task<IActionResult> UpdateSubCategory (SubCategory category)
+        {
+            var valid = await _unitOfWork.Materials.UpdateSubCategory(category);
+            var validateItemCateg = await _unitOfWork.Materials.ValidateItemCategory(category.ItemCategId);
+            var existingSubCategandItemCateg = await _unitOfWork.Materials.ExistSubCategoryAndItemCateg(category);
+
+            if (valid == false)
+                return BadRequest("No Sub Category Exist! Please Try Again");
+            if (existingSubCategandItemCateg == true)
+                return BadRequest("Sub category and Item category already existing! Please try another input");
+
+            if (validateItemCateg == false)
+                return BadRequest("No Item category existing! Please try another input!");
+
+            await _unitOfWork.Materials.UpdateSubCategory(category);
+            await _unitOfWork.CompleteAsync();
+            return Ok(category);
+
+        }
+
+        [HttpPut]
+        [Route("ActiveSubCategory")]
+        public async Task<IActionResult> ActiveSubcategory(SubCategory category)
+        {
+            var valid = await _unitOfWork.Materials.ActivateSubCategory(category);
+
+            if (valid == false)
+                return BadRequest("No Item category existing! Please try another input!");
+
+            await _unitOfWork.Materials.ActivateSubCategory(category);
+            await _unitOfWork.CompleteAsync();
+            return Ok(category);
+
+        }
+
+        [HttpPut]
+        [Route("InActiveSubCategory")]
+        public async Task<IActionResult> InActiveSubcategory(SubCategory category)
+        {
+            var valid = await _unitOfWork.Materials.InActiveSubCategory(category);
+            var validmaterial = await _unitOfWork.Materials.ValidateSubCategand(category.Id);
+
+            if (validmaterial == true)
+                return BadRequest("Sub category was in Use!");
+
+            if (valid == false)
+                return BadRequest("No Item category existing! Please try another input!");
+
+            await _unitOfWork.Materials.InActiveSubCategory(category);
+            await _unitOfWork.CompleteAsync();
+            return Ok(category);
+
+        }
+
+        [HttpGet]
+        [Route("GetAllSubCategoryPagination/{status}")]
+        public async Task<ActionResult<IEnumerable<SubCategoryDto>>> GetAllSubcategoryPagination([FromRoute] bool status, [FromQuery] UserParams userParams)
+        {
+            var category = await _unitOfWork.Materials.GetAllSubCategoryPagination(status, userParams);
+
+            Response.AddPaginationHeader(category.CurrentPage, category.PageSize, category.TotalCount, category.TotalPages, category.HasNextPage, category.HasPreviousPage);
+
+            var categoryResult = new
+            {
+                category,
+                category.CurrentPage,
+                category.PageSize,
+                category.TotalCount,
+                category.TotalPages,
+                category.HasNextPage,
+                category.HasPreviousPage
+            };
+
+            return Ok(categoryResult);
+        }
+
+
+        [HttpGet]
+        [Route("GetAllSubCategoryPaginationOrig/{status}")]
+        public async Task<ActionResult<IEnumerable<SubCategoryDto>>> GetAllSubCategoryPaginationOrig([FromRoute] bool status, [FromQuery] UserParams userParams, [FromQuery] string search)
+        {
+            if (search == null)
+
+                return await GetAllSubcategoryPagination(status, userParams);
+
+            var category = await _unitOfWork.Materials.GetSubCategoryPaginationOrig(userParams, status, search);
+
+            Response.AddPaginationHeader(category.CurrentPage, category.PageSize, category.TotalCount, category.TotalPages, category.HasNextPage, category.HasPreviousPage);
+
+            var categoryResult = new
+            {
+                category,
+                category.CurrentPage,
+                category.PageSize,
+                category.TotalCount,
+                category.TotalPages,
+                category.HasNextPage,
+                category.HasPreviousPage
+            };
+
+            return Ok(categoryResult);
+        }
+
+
+
+
+
+
 
 
     }

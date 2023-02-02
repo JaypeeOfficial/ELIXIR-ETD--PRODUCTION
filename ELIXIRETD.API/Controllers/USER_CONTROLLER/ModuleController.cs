@@ -3,8 +3,6 @@ using ELIXIRETD.DATA.DATA_ACCESS_LAYER.DTOs.USER_DTO;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.EXTENSIONS;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.HELPERS;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.USER_MODEL;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ELIXIRETD.API.Controllers.USER_CONTROLLER
 {
@@ -64,7 +62,17 @@ namespace ELIXIRETD.API.Controllers.USER_CONTROLLER
         [Route("UpdateModule")]
         public async Task<IActionResult> UpdateModuleById([FromBody] Module module)
         {
-         
+            var getMainMenuId = await _unitOfWork.Modules.CheckMainMenu(module.MainMenuId);
+
+            if (getMainMenuId == false)
+                return BadRequest("MainMenu doesn't exist, Please input data first!");
+
+            if (await _unitOfWork.Modules.SubMenuNameExist(module.SubMenuName))
+                return BadRequest("SubMenu Already Exist!, Please try something else!");
+
+            if (await _unitOfWork.Modules.ModuleNameExist(module.ModuleName))
+                return BadRequest("ModuleName Already Exist!, Please try something else!");
+
             await _unitOfWork.Modules.UpdateModule(module);
             await _unitOfWork.CompleteAsync();
 
@@ -75,6 +83,12 @@ namespace ELIXIRETD.API.Controllers.USER_CONTROLLER
         [Route("InActiveModule")]
         public async Task<IActionResult> InActiveModule([FromBody] Module module)
         {
+            
+            var valid = await _unitOfWork.Modules.ValidateMenu(module.Id);
+
+            if (valid == true)
+                return BadRequest("Module was in use!");
+
 
             await _unitOfWork.Modules.InActiveModule(module);
             await _unitOfWork.CompleteAsync();
@@ -186,7 +200,10 @@ namespace ELIXIRETD.API.Controllers.USER_CONTROLLER
         [Route("UpdateMenu")]
         public async Task<IActionResult> UpdateMenu([FromBody] MainMenu menu)
         {
-         
+
+            if (await _unitOfWork.Modules.MenuAlreadyExist(menu.ModuleName))
+                return BadRequest("Menu Already Exist!, Please try something else!");
+
             await _unitOfWork.Modules.UpdateMainMenu(menu);
             await _unitOfWork.CompleteAsync();
 
@@ -198,11 +215,18 @@ namespace ELIXIRETD.API.Controllers.USER_CONTROLLER
         [Route("InActiveMenu")]
         public async Task<IActionResult> InActiveMenu([FromBody] MainMenu menu)
         {
+
+            var valid = await _unitOfWork.Modules.ValidateMenu(menu.Id);
+
+            if (valid == true)
+                return BadRequest("Main menu was in use!");
+
             await _unitOfWork.Modules.InActiveMainMenu(menu);
             await _unitOfWork.CompleteAsync();
 
-            return new JsonResult("Successfully inactive menu!");
+            return new JsonResult("Successfully InActive Menu!");
         }
+
 
         [HttpPut]
         [Route("ActivateMainMenu")]
@@ -212,7 +236,7 @@ namespace ELIXIRETD.API.Controllers.USER_CONTROLLER
             await _unitOfWork.Modules.ActivateMainMenu(menu);
             await _unitOfWork.CompleteAsync();
 
-            return new JsonResult("Successfully activate menu!");
+            return new JsonResult("Successfully InActive Menu!");
         }
 
 
