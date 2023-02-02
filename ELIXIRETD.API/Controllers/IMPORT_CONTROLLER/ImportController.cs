@@ -1,5 +1,7 @@
 ﻿using ELIXIRETD.DATA.CORE.ICONFIGURATION;
 using ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.IMPORT_MODEL;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ELIXIRETD.API.Controllers.IMPORT_CONTROLLER
 {
@@ -16,7 +18,7 @@ namespace ELIXIRETD.API.Controllers.IMPORT_CONTROLLER
 
         [HttpPost]
         [Route("AddNewPOSummary")]
-        public async Task<IActionResult> AddNewPo([FromBody] PoSummary[] posummary)
+        public async Task<ActionResult> AddNewPo([FromBody] PoSummary[] posummary)
         {
 
             if (ModelState.IsValid)
@@ -28,52 +30,40 @@ namespace ELIXIRETD.API.Controllers.IMPORT_CONTROLLER
                 List<PoSummary> itemcodeNotExist = new List<PoSummary>(); 
                 List<PoSummary> uomCodeNotExist = new List<PoSummary>();
 
-
-
                 foreach (PoSummary items in posummary)
                 {
 
-                    if (posummary.Count(x => x.PO_Number == items.PO_Number && x.ItemCode == items.ItemCode) > 1)
+                    var validateSupplier = await _unitOfWork.Imports.CheckSupplier(items.VendorName);
+                    var validateItemCode = await _unitOfWork.Imports.CheckItemCode(items.ItemCode);
+                    var validatePoandItem = await _unitOfWork.Imports.ValidatePOAndItemcodeManual(items.PO_Number, items.ItemCode);
+                    var validateUom = await _unitOfWork.Imports.CheckUomCode(items.Uom);
+
+                    if (validatePoandItem == true)
                     {
                         duplicateList.Add(items);
                     }
-                    else
+
+                    else if (validateSupplier == false)
                     {
-
-                        var validateSupplier = await _unitOfWork.Imports.CheckSupplier(items.VendorName);
-                        var validateItemCode = await _unitOfWork.Imports.CheckItemCode(items.ItemCode);
-                        var validatePoandItem = await _unitOfWork.Imports.ValidatePOAndItemcodeManual(items.PO_Number, items.ItemCode);
-                        var validateUom = await _unitOfWork.Imports.CheckUomCode(items.Uom);
-
-
-                        if (validatePoandItem == true)
-                        {
-                            duplicateList.Add(items);
-                        }
-
-                        else if (validateSupplier == false)
-                        {
-                            supplierNotExist.Add(items);
-                        }
-
-                        else if (validateUom == false)
-                        {
-                            uomCodeNotExist.Add(items);
-                        }
-
-                        else if (validateItemCode == false)
-                        {
-                            itemcodeNotExist.Add(items);
-                        }
-
-                        else
-                            availableImport.Add(items);
-
-                        await _unitOfWork.Imports.AddNewPORequest(items);
+                        supplierNotExist.Add(items);
                     }
-                    
-                }
 
+                    else if (validateUom == false)
+                    {
+                        uomCodeNotExist.Add(items);
+                    }
+
+                    else if (validateItemCode == false)
+                    {
+                        itemcodeNotExist.Add(items);
+                    }
+
+                    else
+                        availableImport.Add(items);
+
+                    await _unitOfWork.Imports.AddNewPORequest(items);
+
+                }
 
                 var resultList = new
                 {

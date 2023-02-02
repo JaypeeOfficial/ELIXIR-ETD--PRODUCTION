@@ -3600,19 +3600,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Philip Lorenz Crasco\\.nuget\\packages\\": {}
+    "C:\\Users\\jobidos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Phil Files\\philfiles\\ELIXIR-ETD-main\\ELIXIRETD.API\\ELIXIRETD.API.csproj",
+      "projectUniqueName": "C:\\Users\\jobidos\\Desktop\\MY ELIXIR ETD\\ELIXIRETD.API\\ELIXIRETD.API\\ELIXIRETD.API.csproj",
       "projectName": "ELIXIRETD.API",
-      "projectPath": "D:\\Phil Files\\philfiles\\ELIXIR-ETD-main\\ELIXIRETD.API\\ELIXIRETD.API.csproj",
-      "packagesPath": "C:\\Users\\Philip Lorenz Crasco\\.nuget\\packages\\",
-      "outputPath": "D:\\Phil Files\\philfiles\\ELIXIR-ETD-main\\ELIXIRETD.API\\obj\\",
+      "projectPath": "C:\\Users\\jobidos\\Desktop\\MY ELIXIR ETD\\ELIXIRETD.API\\ELIXIRETD.API\\ELIXIRETD.API.csproj",
+      "packagesPath": "C:\\Users\\jobidos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jobidos\\Desktop\\MY ELIXIR ETD\\ELIXIRETD.API\\ELIXIRETD.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Philip Lorenz Crasco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jobidos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3620,14 +3625,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Phil Files\\philfiles\\ELIXIR-ETD-main\\ELIXIRETD.DATA\\ELIXIRETD.DATA.csproj": {
-              "projectPath": "D:\\Phil Files\\philfiles\\ELIXIR-ETD-main\\ELIXIRETD.DATA\\ELIXIRETD.DATA.csproj"
+            "C:\\Users\\jobidos\\Desktop\\MY ELIXIR ETD\\ELIXIRETD.API\\ELIXIRETD.DATA\\ELIXIRETD.DATA.csproj": {
+              "projectPath": "C:\\Users\\jobidos\\Desktop\\MY ELIXIR ETD\\ELIXIRETD.API\\ELIXIRETD.DATA\\ELIXIRETD.DATA.csproj"
             }
           }
         }
@@ -3714,24 +3720,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.13, 6.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3740,7 +3728,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -36,6 +36,9 @@ namespace ELIXIRETD.DATA.Migrations
                     b.Property<decimal>("Billed")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("CancelBy")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("DateCancelled")
                         .HasColumnType("datetime2");
 
@@ -46,6 +49,9 @@ namespace ELIXIRETD.DATA.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsCancelled")
                         .HasColumnType("bit");
 
                     b.Property<string>("ItemCode")
@@ -84,332 +90,6 @@ namespace ELIXIRETD.DATA.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("PoSummaries");
-                });
-
-            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.INVENTORY_MODEL.MiscellaneousIssue", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Customer")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Customercode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Details")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsTransact")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("PreparedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("PreparedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Remarks")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("TotalQuantity")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MiscellaneousIssues");
-                });
-
-            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.ORDERING_MODEL.GenerateOrderNo", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("GenerateOrders");
-                });
-
-            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.ORDERING_MODEL.MoveOrder", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime?>("ApproveDateTempo")
-                        .HasColumnType("Date");
-
-                    b.Property<DateTime?>("ApprovedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("BatchNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CancelBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CancelledDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Category")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Company")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateNeeded")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("Department")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsApprove")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsApproveReject")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsCancel")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsPrepared")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsPrint")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsReject")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsTransact")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ItemCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ItemDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("Date");
-
-                    b.Property<int>("OrderNo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrderNoPkey")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PreparedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("PreparedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("QuantityOrdered")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("RejectBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("RejectedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("RejectedDateTempo")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("Remarks")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Uom")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("warehouseId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MoveOrders");
-                });
-
-            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.ORDERING_MODEL.Ordering", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("AddedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ApprovedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("BatchNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CancelDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Category")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Company")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateNeeded")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("DeliveryStatus")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Department")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsApproved")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsCancel")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("IsCancelBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsMove")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsPrepared")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsReject")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ItemCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ItemdDescription")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Location")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("Date");
-
-                    b.Property<int>("OrderNo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrderNoPKey")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PreparedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("PreparedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("QuantityOrdered")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("RejectBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("RejectedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Remarks")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("SyncDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("TimeNeeded")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TransactionType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("TrasactId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Uom")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.ORDERING_MODEL.TransactMoveOrder", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Company")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CustomerName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("DeliveryDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Department")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsApprove")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IsTransact")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("OrderNioPkey")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrderNo")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PreparedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("PreparedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TransactOrder");
                 });
 
             modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.Account", b =>
@@ -499,6 +179,9 @@ namespace ELIXIRETD.DATA.Migrations
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
+
+                    b.Property<string>("MobileNumber")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -663,24 +346,21 @@ namespace ELIXIRETD.DATA.Migrations
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
+                    b.Property<int>("ItemCategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ItemCode")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ItemDescription")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SubCategId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("SubCategoryId")
-                        .HasColumnType("int");
-
                     b.Property<int>("UomId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SubCategoryId");
+                    b.HasIndex("ItemCategoryId");
 
                     b.HasIndex("UomId");
 
@@ -715,39 +395,6 @@ namespace ELIXIRETD.DATA.Migrations
                     b.HasIndex("MainMenuId");
 
                     b.ToTable("Reasons");
-                });
-
-            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.SubCategory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("AddedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateAdded")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("ItemCategId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ItemCategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SubCategoryName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ItemCategoryId");
-
-                    b.ToTable("SubCategories");
                 });
 
             modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.Supplier", b =>
@@ -1021,7 +668,19 @@ namespace ELIXIRETD.DATA.Migrations
                     b.Property<decimal>("ActualDelivered")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<decimal>("ActualGood")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("ActualReceivingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool?>("ConfirmRejectByWarehouse")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsWarehouseReceived")
                         .HasColumnType("bit");
 
                     b.Property<string>("ItemCode")
@@ -1051,6 +710,9 @@ namespace ELIXIRETD.DATA.Migrations
                     b.Property<string>("Supplier")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("TotalReject")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("TransactionType")
                         .HasColumnType("nvarchar(max)");
 
@@ -1060,6 +722,37 @@ namespace ELIXIRETD.DATA.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("WarehouseReceived");
+                });
+
+            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.WAREHOUSE_MODEL.Warehouse_Reject", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Quantity")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("RejectedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RejectedDate")
+                        .HasColumnType("Date");
+
+                    b.Property<string>("Remarks")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("WarehouseReceivingId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("WarehouseReject");
                 });
 
             modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.Customer", b =>
@@ -1086,9 +779,11 @@ namespace ELIXIRETD.DATA.Migrations
 
             modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.Material", b =>
                 {
-                    b.HasOne("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.SubCategory", "SubCategory")
+                    b.HasOne("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.ItemCategory", "ItemCategory")
                         .WithMany()
-                        .HasForeignKey("SubCategoryId");
+                        .HasForeignKey("ItemCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.Uom", "Uom")
                         .WithMany()
@@ -1096,7 +791,7 @@ namespace ELIXIRETD.DATA.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("SubCategory");
+                    b.Navigation("ItemCategory");
 
                     b.Navigation("Uom");
                 });
@@ -1110,15 +805,6 @@ namespace ELIXIRETD.DATA.Migrations
                         .IsRequired();
 
                     b.Navigation("MainMenu");
-                });
-
-            modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.SubCategory", b =>
-                {
-                    b.HasOne("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.SETUP_MODEL.ItemCategory", "ItemCategory")
-                        .WithMany()
-                        .HasForeignKey("ItemCategoryId");
-
-                    b.Navigation("ItemCategory");
                 });
 
             modelBuilder.Entity("ELIXIRETD.DATA.DATA_ACCESS_LAYER.MODELS.USER_MODEL.Module", b =>
